@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi Plantilla HTML Seccionada</title>
+
+    <style>
+        /* Estilos CSS básicos para la estructura DIV */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        /* Estilo para los contenedores principales (div) */
+        .seccion-contenedor {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Estilos de las tablas, como en el ejemplo anterior */
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f184f3;
+        }
+        .destacado {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mi trabajo de sueños</h1>
+
+    <div class="seccion-contenedor" id="introduccion">
+        <h2>Sección de Introducción</h2>
+        <p>
+            Este es el primer párrafo. El objetivo de este `div` es agrupar la información inicial o introductoria de la página.
+            Empiezo describiendo el trabajo de mis sueños, su relevancia y aportacion en el mercado laboral.
+        </p>
+        
+        <p>
+            Aquí está el segundo párrafo. El uso de la etiqueta
+            <span class="destacado">div</span>
+            nos permite aplicar estilos a un bloque de contenido completo, como el borde que ves ahora mismo.
+        </p>
+    </div>
+
+    <div class="seccion-contenedor" id="lista-elementos">
+        <h2>Sección de Lista (UL/LI)</h2>
+        <ul>
+            <li>Elemento de la lista agrupado.</li>
+            <li>Segundo elemento dentro de este contenedor `div`.</li>
+            <li>Tercer punto importante.</li>
+            <li>Último ítem de la lista.</li>
+        </ul>
+    </div>
+
+    <div class="seccion-contenedor" id="tablas-datos">
+        <h2>Sección de Tablas</h2>
+
+        <h3>Tabla 1: Productos</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P001</td>
+                    <td>Laptop</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>P002</td>
+                    <td>Mouse</td>
+                    <td>$25</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Tabla 2: Tareas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Actividad</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>Planificación</td>
+                    <td>Completado</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>Codificación</td>
+                    <td>En Progreso</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

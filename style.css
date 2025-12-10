@@ -1,0 +1,124 @@
+/* --- Estilos Globales y Tipografía --- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f7; /* Fondo suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #1a5c89;
+    padding: 20px 0;
+    margin: 0;
+    background-color: #ffffff;
+    border-bottom: 3px solid #1a5c89;
+}
+
+h2, h3 {
+    color: #1a5c89;
+    border-left: 5px solid #6699cc;
+    padding-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* --- Estilos de las Secciones (DIV) --- */
+
+.seccion-contenedor {
+    /* Centra el contenedor y limita su ancho */
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    
+    /* Diseño de tarjeta (card design) */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px 35px;
+    transition: transform 0.3s ease;
+}
+
+.seccion-contenedor:hover {
+    transform: translateY(-3px); /* Efecto sutil al pasar el mouse */
+}
+
+/* --- Estilos de Párrafos y Span --- */
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.destacado {
+    /* Sobreescribe el color azul por un color de énfasis */
+    color: #cc0000;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #fff0f0;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+/* --- Estilos de la Lista (UL/LI) --- */
+
+#lista-elementos ul {
+    list-style-type: none; /* Elimina los puntos predeterminados */
+    padding-left: 0;
+}
+
+#lista-elementos li {
+    background: #f1f6ff; /* Fondo ligeramente azulado para los ítems */
+    border-left: 4px solid #1a5c89;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+#lista-elementos li:hover {
+    background-color: #e0eaff;
+}
+
+/* --- Estilos de las Tablas --- */
+
+#tablas-datos table {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-collapse: separate; /* Permite border-radius */
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que las esquinas redondeadas se vean bien */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#tablas-datos th, #tablas-datos td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tablas-datos th {
+    background-color: #1a5c89;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Color de fondo alternativo para filas */
+#tablas-datos tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+#tablas-datos tbody tr:hover {
+    background-color: #e9f5ff; /* Resaltado al pasar el mouse */
+}
+
+/* Eliminar el borde de la última fila */
+#tablas-datos tbody tr:last-child td {
+    border-bottom: none;
+}
