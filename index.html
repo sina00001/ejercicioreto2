@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Reto2Uveg</title>
-
     <style>
-        /* Estilos CSS básicos para la estructura DIV */
+        /* Estilospara la estructura DIV */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -40,12 +39,42 @@
             color: blue;
             font-weight: bold;
         }
+
+/* 1. Estilos para centrar y estructurar el contenedor del título */
+        .header-contenedor {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            width: 100%; 
+            padding-top: 50px; 
+        }
+        
+        /* 2. Estilos para la imagen específica dentro del título */
+        .header-contenedor img {
+            width: 200px; 
+            height: auto; 
+            margin-left: 15px; 
+            border-radius: 8px; 
+        }
+
+        /* 3. Estilos para el texto del título (opcional, para que el texto no se vea afectado) */
+        .header-contenedor h1 {
+            font-size: 2.5em;
+            color: #1a5c89; 
+            margin: 0; 
+        }
     </style>
 </head>
 <body>
 
-    <h1>Mi trabajo de sueños</h1>
-
+    <h1>Mi trabajo de sueños  </h1>
+    <div class="header-contenedor">
+        <p>Mi trabajo de sueños:</p>
+        <img 
+            src="https://i.pinimg.com/1200x/c3/2b/de/c32bde4da88b61811975e67fbaa2bc31.jpg" 
+            alt="Imagen de trabajo de sueños"
+        >
+    </div>
     <div class="seccion-contenedor" id="introduccion">
         <h2>Descripción del trabajo de sueños</h2>
         <p>Alumno: Iosed Mendoza Flores</p>
@@ -57,7 +86,6 @@
             ese sector.
         </p>
     </div>
-
     <div class="seccion-contenedor" id="lista-elementos">
         <h2>Lista argumentativa de porque elegiría ese trabajo</h2>
         <ul>
@@ -66,10 +94,8 @@
             <li>Trabajar con datos requiere conocimientos en matemáticas y estadística, lo cual es una actividad que me gusta realizar.</li>
         </ul>
     </div>
-
     <div class="seccion-contenedor" id="tablas-datos">
         <h2>Sección de Tablas</h2>
-
         <h3>Tabla 1: Pasos y requisitos para obtener ese trabajo</h3>
         <table>
             <thead>
@@ -93,6 +119,6 @@
             </tbody>
         </table>
     </div>
-
+    
 </body>
 </html>
